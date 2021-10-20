@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body,
+        html {
+            height: 100%;
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="/tailwind.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Better You</title>
+</head>
+
+<body>
+    <div class="flex flex-col h-full">
+        <div class="sticky bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6">
+                <div
+                    class="flex justify-between items-center border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10">
+                    <div class="flex justify-start lg:w-0 lg:flex-1">
+                        <a href="#">
+                            <span class="sr-only">Better You</span>
+                            <img class="h-10 w-auto" src="./assets/logo.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="-mr-2 -my-2 md:hidden">
+                        <button type="button"
+                            class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+                            aria-expanded="false">
+                            <span class="sr-only">Open menu</span>
+                            <!-- Heroicon name: outline/menu -->
+                            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h16" />
+                            </svg>
+                        </button>
+                    </div>
+                    <nav class="hidden md:flex space-x-10">
+                        <a href="index.html"
+                            class="text-base font-light text-indigo-900 hover:underline hover:text-gray-900">
+                            About
+                        </a>
+                        <a href="services.html"
+                            class="text-base font-light text-indigo-900 hover:underline hover:text-gray-900">
+                            Services
+                        </a>
+                        <a href="pricing.html"
+                            class="text-base font-light text-indigo-900 hover:underline hover:text-gray-900">
+                            Pricing
+                        </a>
+                        <a href="#" class="text-base font-light text-indigo-900 hover:underline hover:text-gray-900">
+                            Docs
+                        </a>
+                        </a>
+                        <a href="#" class="text-base font-light text-indigo-900 hover:underline">
+                            Contact
+                        </a>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="sticky top-0 inset-x-0 p-2 transition transform origin-top-right hidden">
+                <!-- md:hidden -->
+                <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
+                    <div class="pt-5 pb-6 px-5">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <img class="h-8 w-auto" src="./assets/logo.jpg" alt="Better You">
+                            </div>
+                            <div class="-mr-2">
+                                <button type="button"
+                                    class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                                    <span class="sr-only">Close menu</span>
+                                    <!-- Heroicon name: outline/x -->
+                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M6 18L18 6M6 6l12 12" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="py-6 px-5 space-y-6">
+                            <div class="grid grid-cols-2 gap-y-4 gap-x-8">
+                                <a href="index.html" class="text-base font-medium text-gray-900 hover:text-gray-700">
+                                    About
+                                </a>
+                                <a href="services.html" class="text-base font-medium text-gray-900 hover:text-gray-700">
+                                    Services
+                                </a>
+                                <a href="pricing.html" class="text-base font-medium text-gray-900 hover:text-gray-700">
+                                    Pricing
+                                </a>
+                                <a href="#" class="text-base font-medium text-gray-900 hover:text-gray-700">
+                                    Docs
+                                </a>
+                                <a href="#" class="text-base font-medium text-gray-900 hover:text-gray-700">
+                                    Contact
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <main class="flex-1 overflow-y-auto h-full">
+            <div class="max-w-7xl mx-auto my-4 px-4 sm:px-6">
+                <h1 class="my-4 text-2xl text-center">
+                    Pricing and service description
+                </h1>
+                <h3 class="text-lg text-center mb-2">I will be happy to see you on a personal consultation (which is
+                    compeletely free)<br>
+                    and get personalized reccomendations regarding advisable treatments</h3>
+                <table class="table-fixed w-full border-separate">
+                    <thread>
+                        <tr>
+                            <th class="w-1/3 sm:w-1/6 bg-indigo-100">Service</th>
+                            <th class="hidden sm:table-cell sm:w-4/6 bg-indigo-200">Decription</th>
+                            <th class="w-1/3 sm:w-1/12 bg-indigo-100">Duration</th>
+                            <th class="w-1/3 sm:w-1/12 bg-indigo-200">Price</th>
+                        </tr>
+                        <tr>
+                            <th class="border-b-2 border-light-blue-400" colspan="5">Skin care</th>
+                        </tr>
+                        <tr>
+                            <td class="w-1/3 sm:w-1/6  border-b border-light-blue-400 text-center text-sm sm:text-base">
+                                First consultation</td>
+                            <td
+                                class="hidden sm:table-cell sm:w-4/6 border-b border-light-blue-400 text-justify p-2 text-sm">
+                                Get a professional cosmetology consultation today to experience a rounded and wholesome
+                                process to looking your best at any age.</td>
+                            <td class="w-1/3 sm:w-1/12 border-b border-light-blue-400 text-center text-sm sm:text-base">
+                                10 - 15 min</td>
+                            <td class="w-1/3 sm:w-1/12 border-b border-light-blue-400 text-center text-sm sm:text-base">
+                                Free</td>
+                        </tr>
+                        <tr>
+                            <td class="w-1/3 sm:w-1/6 border-b border-light-blue-400 text-center text-sm sm:text-base">
+                                Basic Facial</td>
+                            <td
+                                class="hidden sm:table-cell sm:w-4/6 border-b border-light-blue-400 text-justify p-2 text-sm">
+                                Deep cleansing, exfoliation with steam treatment, followed by extractions, then eyebrow
+                                shaping; a de-stressing massage for the face, neck & shoulders. A custom mask, plus
+                                regular eye treatment, followed by moisturizer/sunscreen application. This relaxing but
+                                serious cleansing treatment will leave you with a clean, fresh, & glowing complexion.
+                            </td>
+                            <td class="w-1/3 sm:w-1/12 border-b border-light-blue-400 text-center text-sm sm:text-base">
+                                90 min</td>
+                            <td class="w-1/3 sm:w-1/12 border-b border-light-blue-400 text-center text-sm sm:text-base">
+                                550 &#8362;</td>
+                        </tr>
+                        <tr>
+                            <td class="w-1/3 sm:w-1/6 border-b border-light-blue-400 text-center text-sm sm:text-base">
+                                Deluxe Facial</td>
+                            <td
+                                class="hidden sm:table-cell sm:w-4/6 border-b border-light-blue-400 text-justify p-2 text-sm">
+                                This special facial can be customized to the client’s skin situation (ie. dry, oily,
+                                sensitive, etc.) It is created to smooth and soften your complexion while it de-stresses
+                                your entire body. Our deluxe facial will make you feel and look healthier.</td>
+                            <td class="w-1/3 sm:w-1/12 border-b border-light-blue-400 text-center text-sm sm:text-base">
+                                90 min</td>
+                            <td class="w-1/3 sm:w-1/12 border-b border-light-blue-400 text-center text-sm sm:text-base">
+                                650 &#8362;</td>
+                        </tr>
+                        <tr>
+                            <td class="w-1/3 sm:w-1/6 border-b border-light-blue-400 text-center text-sm sm:text-base">
+                                Acne Treatment</td>
+                            <td
+                                class="hidden sm:table-cell sm:w-4/6 border-b border-light-blue-400 text-justify p-2 text-sm">
+                                It is a very effective way of treating acne conditions that have not responded to other
+                                treatments and has produced many remarkable results. Urea peroxide, alpha-hydroxyl
+                                acids, and a special anti-androgen element are incorporated in Rejuvi Normalizing
+                                Formula. This combination triggers three mechanisms: sterilizing acne bacteria, removing
+                                the sebum plug on skin pores, and inhibiting excessive skin hormones to reduce oil
+                                production (an inherent factor causing acne).</td>
+                            <td class="w-1/3 sm:w-1/12 border-b border-light-blue-400 text-center text-sm sm:text-base">
+                                90 min</td>
+                            <td class="w-1/3 sm:w-1/12 border-b border-light-blue-400 text-center text-sm sm:text-base">
+                                500 &#8362;</td>
+                        </tr>
+                        <tr>
+                            <td class="w-1/3 sm:w-1/6 border-b border-light-blue-400 text-center text-sm sm:text-base">
+                                Acne Blue Light Therapy</td>
+                            <td
+                                class="hidden sm:table-cell sm:w-4/6 border-b border-light-blue-400 text-justify p-2 text-sm">
+                                Blue light therapy is a noninvasive treatment for acne that uses light to kill certain
+                                bacteria on the skin. Prior examination required.</td>
+                            <td class="w-1/3 sm:w-1/12 border-b border-light-blue-400 text-center text-sm sm:text-base">
+                                30 - 120 min</td>
+                            <td class="w-1/3 sm:w-1/12 border-b border-light-blue-400 text-center text-sm sm:text-base">
+                                300 - 500 &#8362;</td>
+                        </tr>
+                        <tr>
+                            <td class="w-1/3 sm:w-1/6 border-b border-light-blue-400 text-center text-sm sm:text-base">
+                                Microdermabrasion</td>
+                            <td
+                                class="hidden sm:table-cell sm:w-4/6 border-b border-light-blue-400 text-justify p-2 text-sm">
+                                Microdermabrasion is a minimally invasive procedure used to renew overall skin tone and
+                                texture. It can improve the appearance of sun damage, wrinkles, fine lines, age spots,
+                                acne scarring, melasma, and other skin-related concerns and conditions. The procedure
+                                uses a special applicator with an abrasive surface to gently sand away the thick outer
+                                layer of the skin to rejuvenate it.</td>
+                            <td class="w-1/3 sm:w-1/12 border-b border-light-blue-400 text-center text-sm sm:text-base">
+                                30 min</td>
+                            <td class="w-1/3 sm:w-1/12 border-b border-light-blue-400 text-center text-sm sm:text-base">
+                                400 &#8362;</td>
+                        </tr>
+                        <tr>
+                            <td class="w-1/3 sm:w-1/6 border-b border-light-blue-400 text-center text-sm sm:text-base">
+                                Chemical Peels</td>
+                            <td
+                                class="hidden sm:table-cell sm:w-4/6 border-b border-light-blue-400 text-justify p-2 text-sm">
+                                A Chemical Peel uses a chemical to remove the top Epidermis layer of the skin down into
+                                the Stratum Corneum layer. We use a professional grade level of Lactic Acid (AHA) or a
+                                Lactic + Salicylic Acid blend (AHA/BHA). This service is beneficial for targeting fine
+                                lines and wrinkles and for those looking for deep exfoliation, or reduced
+                                hyperpigmentation. It also benefits those with challenges of excess sebum, pore
+                                clogging, congestion and breakouts.</td>
+                            <td class="w-1/3 sm:w-1/12 border-b border-light-blue-400 text-center text-sm sm:text-base">
+                                30 - 90 min</td>
+                            <td class="w-1/3 sm:w-1/12 border-b border-light-blue-400 text-center text-sm sm:text-base">
+                                300 - 600 &#8362;</td>
+                        </tr>
+                        <tr>
+                            <td class="w-1/3 sm:w-1/6 border-b border-light-blue-400 text-center text-sm sm:text-base">
+                                Laser Skin Resurfacing</td>
+                            <td
+                                class="hidden sm:table-cell sm:w-4/6 border-b border-light-blue-400 text-justify p-2 text-sm">
+                                Laser skin resurfacing targets the outer layer of your skin while simultaneously heating
+                                the lower layers in the dermis. This will promote collagen production. Prior examination
+                                required.</td>
+                            <td class="w-1/3 sm:w-1/12 border-b border-light-blue-400 text-center text-sm sm:text-base">
+                                30 - 120 min</td>
+                            <td class="w-1/3 sm:w-1/12 border-b border-light-blue-400 text-center text-sm sm:text-base">
+                                from 2000 &#8362;</td>
+                        </tr>
+                        <tr>
+                            <td class="w-1/3 sm:w-1/6 text-center text-sm sm:text-base">Laser Skin Rejuvenation</td>
+                            <td class="hidden sm:table-cell sm:w-4/6 text-justify p-2 text-sm">Skin resurfacing
+                                procedure that uses a laser to improve the appearance of the skin, sun-damaged skin,
+                                scars caused by acne, chickenpox or injuries or treat minor facial flaws. This treatment
+                                also decreases the appearance of fine lines around the eyes, mouth, and cheeks.</td>
+                            <td class="w-1/3 sm:w-1/12 text-center text-sm sm:text-base">30 - 120 min</td>
+                            <td class="w-1/3 sm:w-1/12 text-center text-sm sm:text-base">from 2000 &#8362;</td>
+                        </tr>
+                        <tr>
+                            <th class="border-b-2 border-t-2 border-light-blue-400" colspan="5">Therapeutic Massage</th>
+                        </tr>
+                        <tr>
+                            <td class="w-1/3 sm:w-1/6 border-b border-light-blue-400 text-center text-sm sm:text-base">
+                                Lymphatic Massage</td>
+                            <td
+                                class="hidden sm:table-cell sm:w-4/6 border-b border-light-blue-400 text-justify p-2 text-sm">
+                                Clean out that plumbing. Lymphatic massage stimulate the body's lymphatic system, aka
+                                the body's plumbing system.</td>
+                            <td class="w-1/3 sm:w-1/12 border-b border-light-blue-400 text-center text-sm sm:text-base">
+                                30 min</td>
+                            <td class="w-1/3 sm:w-1/12 border-b border-light-blue-400 text-center text-sm sm:text-base">
+                                300 &#8362;</td>
+                        </tr>
+                        <tr>
+                            <td class="w-1/3 sm:w-1/6 border-b border-light-blue-400 text-center text-sm sm:text-base">
+                                Swedish Massage</td>
+                            <td
+                                class="hidden sm:table-cell sm:w-4/6 border-b border-light-blue-400 text-justify p-2 text-sm">
+                                Looking for the massage with the music in the background and the nice-smelling oils?
+                                This ultra-relaxing massage is for you.</td>
+                            <td class="w-1/3 sm:w-1/12 border-b border-light-blue-400 text-center text-sm sm:text-base">
+                                30 min</td>
+                            <td class="w-1/3 sm:w-1/12 border-b border-light-blue-400 text-center text-sm sm:text-base">
+                                300 &#8362;</td>
+                        </tr>
+                        <tr>
+                            <td class="w-1/3 sm:w-1/6 border-b border-light-blue-400 text-center text-sm sm:text-base">
+                                Combination Massage</td>
+                            <td
+                                class="hidden sm:table-cell sm:w-4/6 border-b border-light-blue-400 text-justify p-2 text-sm">
+                                A Combination Massage uses various techniques across acupressure, reflexology, Swedish,
+                                etc to relieve tension and stress.</td>
+                            <td class="w-1/3 sm:w-1/12 border-b border-light-blue-400 text-center text-sm sm:text-base">
+                                30 min</td>
+                            <td class="w-1/3 sm:w-1/12 border-b border-light-blue-400 text-center text-sm sm:text-base">
+                                300 &#8362;</td>
+                        </tr>
+                        <tr>
+                            <td class="w-1/3 sm:w-1/6 text-center text-sm sm:text-base">Trigger Point Massage</td>
+                            <td class="hidden sm:table-cell sm:w-4/6 text-justify p-2 text-sm">A more targeted approach
+                                of massage, focusing directly on releasing tight knots and alleviating pain caused by
+                                them.</td>
+                            <td class="w-1/3 sm:w-1/12 text-center text-sm sm:text-base">30 min</td>
+                            <td class="w-1/3 sm:w-1/12 text-center text-sm sm:text-base">300 &#8362;</td>
+                        </tr>
+                        <tr>
+                            <th class="border-b-2 border-t-2 border-light-blue-400" colspan="5">Nail Care</th>
+                        </tr>
+                        <tr>
+                            <td class="w-1/3 sm:w-1/6 border-b border-light-blue-400 text-center text-sm sm:text-base">
+                                Classic manicure</td>
+                            <td
+                                class="hidden sm:table-cell sm:w-4/6 border-b border-light-blue-400 text-justify p-2 text-sm">
+                            </td>
+                            <td class="w-1/3 sm:w-1/12 border-b border-light-blue-400 text-center text-sm sm:text-base">
+                                30 min</td>
+                            <td class="w-1/3 sm:w-1/12 border-b border-light-blue-400 text-center text-sm sm:text-base">
+                                100 &#8362;</td>
+                        </tr>
+                        <tr>
+                            <td class="w-1/3 sm:w-1/6 border-b border-light-blue-400 text-center text-sm sm:text-base">
+                                Combination manicure</td>
+                            <td
+                                class="hidden sm:table-cell sm:w-4/6 border-b border-light-blue-400 text-justify p-2 text-sm">
+                            </td>
+                            <td class="w-1/3 sm:w-1/12 border-b border-light-blue-400 text-center text-sm sm:text-base">
+                                30 min</td>
+                            <td class="w-1/3 sm:w-1/12 border-b border-light-blue-400 text-center text-sm sm:text-base">
+                                100 &#8362;</td>
+                        </tr>
+                        <tr>
+                            <td class="w-1/3 sm:w-1/6 border-b border-light-blue-400 text-center text-sm sm:text-base">
+                                Gel lacquer coating</td>
+                            <td
+                                class="hidden sm:table-cell sm:w-4/6 border-b border-light-blue-400 text-justify p-2 text-sm">
+                            </td>
+                            <td class="w-1/3 sm:w-1/12 border-b border-light-blue-400 text-center text-sm sm:text-base">
+                                30 min</td>
+                            <td class="w-1/3 sm:w-1/12 border-b border-light-blue-400 text-center text-sm sm:text-base">
+                                100 &#8362;</td>
+                        </tr>
+                        <tr>
+                            <td class="w-1/3 sm:w-1/6 border-b border-light-blue-400 text-center text-sm sm:text-base">
+                                Classic Pedicure</td>
+                            <td
+                                class="hidden sm:table-cell sm:w-4/6 border-b border-light-blue-400 text-justify p-2 text-sm">
+                                A pampering treatment inclusive of full pedicure, peeling. New kit included.</td>
+                            <td class="w-1/3 sm:w-1/12 border-b border-light-blue-400 text-center text-sm sm:text-base">
+                                50 min</td>
+                            <td class="w-1/3 sm:w-1/12 border-b border-light-blue-400 text-center text-sm sm:text-base">
+                                200 &#8362;</td>
+                        </tr>
+                        <tr>
+                            <td class="w-1/3 sm:w-1/6 border-b border-light-blue-400 text-center text-sm sm:text-base">
+                                Combination Pedicure</td>
+                            <td
+                                class="hidden sm:table-cell sm:w-4/6 border-b border-light-blue-400 text-justify p-2 text-sm">
+                                A pampering treatment inclusive of full pedicure, peeling. New kit included.</td>
+                            <td class="w-1/3 sm:w-1/12 border-b border-light-blue-400 text-center text-sm sm:text-base">
+                                50 min</td>
+                            <td class="w-1/3 sm:w-1/12 border-b border-light-blue-400 text-center text-sm sm:text-base">
+                                200 &#8362;</td>
+                        </tr>
+                        <tr>
+                            <td class="w-1/3 sm:w-1/6 text-center text-sm sm:text-base">Medical Pedicure</td>
+                            <td class="hidden sm:table-cell sm:w-4/6 text-justify p-2 text-sm">A medical pedicure is a
+                                non-invasive, dry procedure performed with combineation of podiatry with nail care.
+                                Including ingrown nail treatment.</td>
+                            <td class="w-1/3 sm:w-1/12 text-center text-sm sm:text-base">60 min</td>
+                            <td class="w-1/3 sm:w-1/12 text-center text-sm sm:text-base">300 &#8362;</td>
+                        </tr>
+                        <tr>
+                            <th class="border-b-2 border-t-2 border-light-blue-400" colspan="5">Hair Care</th>
+                        </tr>
+                        <tr>
+                            <td class="w-1/3 sm:w-1/6 border-b border-light-blue-400 text-center text-sm sm:text-base">
+                                Haircut for Men</td>
+                            <td
+                                class="hidden sm:table-cell sm:w-4/6 border-b border-light-blue-400 text-justify p-2 text-sm">
+                            </td>
+                            <td class="w-1/3 sm:w-1/12 border-b border-light-blue-400 text-center text-sm sm:text-base">
+                                20 min</td>
+                            <td class="w-1/3 sm:w-1/12 border-b border-light-blue-400 text-center text-sm sm:text-base">
+                                60 - 80 &#8362;</td>
+                        </tr>
+                        <tr>
+                            <td class="w-1/3 sm:w-1/6 border-b border-light-blue-400 text-center text-sm sm:text-base">
+                                Haircut for Women</td>
+                            <td
+                                class="hidden sm:table-cell sm:w-4/6 border-b border-light-blue-400 text-justify p-2 text-sm">
+                            </td>
+                            <td class="w-1/3 sm:w-1/12 border-b border-light-blue-400 text-center text-sm sm:text-base">
+                                20 - 40 min</td>
+                            <td class="w-1/3 sm:w-1/12 border-b border-light-blue-400 text-center text-sm sm:text-base">
+                                80 - 120 &#8362;</td>
+                        </tr>
+                        <tr>
+                            <td class="w-1/3 sm:w-1/6 border-b border-light-blue-400 text-center text-sm sm:text-base">
+                                Haircut for Children</td>
+                            <td
+                                class="hidden sm:table-cell sm:w-4/6 border-b border-light-blue-400 text-justify p-2 text-sm">
+                            </td>
+                            <td class="w-1/3 sm:w-1/12 border-b border-light-blue-400 text-center text-sm sm:text-base">
+                                20 min</td>
+                            <td class="w-1/3 sm:w-1/12 border-b border-light-blue-400 text-center text-sm sm:text-base">
+                                40 - 80 &#8362;</td>
+                        </tr>
+                        <tr>
+                            <td class="w-1/3 sm:w-1/6 text-center text-sm sm:text-base">Highlights & Color</td>
+                            <td class="hidden sm:table-cell sm:w-4/6 text-justify p-2 text-sm"></td>
+                            <td colspan="2" class="w-1/3 sm:w-1/12 text-center text-sm sm:text-base">* Prices will vary
+                                depending on the length of the client’s hair</td>
+                            <td class="w-1/3 sm:w-1/12 text-center text-sm sm:text-base"></td>
+                        </tr>
+                        <tr>
+                            <th class="border-b-2 border-t-2 border-light-blue-400" colspan="5">Eyes and Brows, Makeup
+                            </th>
+                        </tr>
+                        <tr>
+                            <td class="w-1/3 sm:w-1/6 border-b border-light-blue-400 text-center text-sm sm:text-base">
+                                Lash extention</td>
+                            <td
+                                class="hidden sm:table-cell sm:w-4/6 border-b border-light-blue-400 text-justify p-2 text-sm">
+                                Classic Full Set</td>
+                            <td class="w-1/3 sm:w-1/12 border-b border-light-blue-400 text-center text-sm sm:text-base">
+                                120 min</td>
+                            <td class="w-1/3 sm:w-1/12 border-b border-light-blue-400 text-center text-sm sm:text-base">
+                                450 &#8362;</td>
+                        </tr>
+                        <tr>
+                            <td class="w-1/3 sm:w-1/6 border-b border-light-blue-400 text-center text-sm sm:text-base">
+                                Lash extention</td>
+                            <td
+                                class="hidden sm:table-cell sm:w-4/6 border-b border-light-blue-400 text-justify p-2 text-sm">
+                                Mix Full Set</td>
+                            <td class="w-1/3 sm:w-1/12 border-b border-light-blue-400 text-center text-sm sm:text-base">
+                                120 min</td>
+                            <td class="w-1/3 sm:w-1/12 border-b border-light-blue-400 text-center text-sm sm:text-base">
+                                480 &#8362;</td>
+                        </tr>
+                        <tr>
+                            <td class="w-1/3 sm:w-1/6 border-b border-light-blue-400 text-center text-sm sm:text-base">
+                                Lash extention</td>
+                            <td
+                                class="hidden sm:table-cell sm:w-4/6 border-b border-light-blue-400 text-justify p-2 text-sm">
+                                Volume Full Set</td>
+                            <td class="w-1/3 sm:w-1/12 border-b border-light-blue-400 text-center text-sm sm:text-base">
+                                120 min</td>
+                            <td class="w-1/3 sm:w-1/12 border-b border-light-blue-400 text-center text-sm sm:text-base">
+                                520 &#8362;</td>
+                        </tr>
+                        <tr>
+                            <td class="w-1/3 sm:w-1/6 border-b border-light-blue-400 text-center text-sm sm:text-base">
+                                Lash extention</td>
+                            <td
+                                class="hidden sm:table-cell sm:w-4/6 border-b border-light-blue-400 text-justify p-2 text-sm">
+                                Touch-up</td>
+                            <td class="w-1/3 sm:w-1/12 border-b border-light-blue-400 text-center text-sm sm:text-base">
+                                120 min</td>
+                            <td class="w-1/3 sm:w-1/12 border-b border-light-blue-400 text-center text-sm sm:text-base">
+                                450 &#8362;</td>
+                        </tr>
+                        <tr>
+                            <td class="w-1/3 sm:w-1/6 border-b border-light-blue-400 text-center text-sm sm:text-base">
+                                Eye brows</td>
+                            <td
+                                class="hidden sm:table-cell sm:w-4/6 border-b border-light-blue-400 text-justify p-2 text-sm">
+                                Tinting/Waxing</td>
+                            <td class="w-1/3 sm:w-1/12 border-b border-light-blue-400 text-center text-sm sm:text-base">
+                                20 min</td>
+                            <td class="w-1/3 sm:w-1/12 border-b border-light-blue-400 text-center text-sm sm:text-base">
+                                150 &#8362;</td>
+                        </tr>
+                        <tr>
+                            <td class="w-1/3 sm:w-1/6 border-b border-light-blue-400 text-center text-sm sm:text-base">
+                                Makeup for all occasions</td>
+                            <td
+                                class="hidden sm:table-cell sm:w-4/6 border-b border-light-blue-400 text-justify p-2 text-sm">
+                                Airbrush and Lashes included</td>
+                            <td class="w-1/3 sm:w-1/12 border-b border-light-blue-400 text-center text-sm sm:text-base">
+                                30 - 60 min</td>
+                            <td class="w-1/3 sm:w-1/12 border-b border-light-blue-400 text-center text-sm sm:text-base">
+                                250 &#8362;</td>
+                        </tr>
+                        <tr>
+                            <td class="w-1/3 sm:w-1/6 border-b border-light-blue-400 text-center">Wedding kit</td>
+                            <td
+                                class="hidden sm:table-cell sm:w-4/6 border-b border-light-blue-400 text-justify p-2 text-sm">
+                                Hair & makeup including Trial</td>
+                            <td colspan="2"
+                                class="w-1/3 sm:w-1/12 border-b border-light-blue-400 text-center text-sm sm:text-base">
+                                * Price on request</td>
+                            <td class="w-1/3 sm:w-1/12 border-b border-light-blue-400 text-center text-sm sm:text-base">
+                            </td>
+                        </tr>
+                    </thread>
+                </table>
+            </div>
+            <!-- </div> -->
+
+
+        </main>
+
+        <footer>
+            <div class="bg-white">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6">
+                    <div
+                        class="flex justify-between items-center border-t-2 border-gray-100 py-6 md:justify-start md:space-x-10">
+                        <nav class="flex space-x-10">
+                            <a href="#" class="text-base font-light text-gray-500 hover:text-gray-900">
+                                Facebook
+                            </a>
+                            <a href="#" class="text-base font-light text-gray-500 hover:text-gray-900">
+                                Twitter
+                            </a>
+                            <a href="#" class="text-base font-light text-gray-500 hover:text-gray-900">
+                                Instargam
+                            </a>
+                        </nav>
+                    </div>
+                </div>
+        </footer>
+    </div>
+</body>
+
+</html>

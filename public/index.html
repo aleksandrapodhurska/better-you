@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body,
+        html {
+            height: 100%;
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link href="/tailwind.css" rel="stylesheet"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Better You</title>
+</head>
+
+<body class="font-body">
+    <div class="flex flex-col h-full">
+        <div class="sticky bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6">
+                <div
+                    class="flex justify-between items-center border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10">
+                    <div class="flex justify-start lg:w-0 lg:flex-1">
+                        <a href="#">
+                            <span class="sr-only">Better You</span>
+                            <img class="h-10 w-auto" src="./assets/logo.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="-mr-2 -my-2 md:hidden">
+                        <button type="button"
+                            class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+                            aria-expanded="false">
+                            <span class="sr-only">Open menu</span>
+                            <!-- Heroicon name: outline/menu -->
+                            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h16" />
+                            </svg>
+                        </button>
+                    </div>
+                    <nav class="hidden md:flex space-x-10">
+                        <a href="index.html" class="text-base font-light text-indigo-900 hover:underline hover:text-gray-900">
+                            About
+                        </a>
+                        <a href="services.html" class="text-base font-light text-indigo-900 hover:underline hover:text-gray-900">
+                            Services
+                        </a>
+                        <a href="pricing.html" class="text-base font-light text-indigo-900 hover:underline hover:text-gray-900">
+                            Pricing
+                        </a>
+                        <a href="#" class="text-base font-light text-indigo-900 hover:underline hover:text-gray-900">
+                            Docs
+                        </a>
+                        </a>
+                        <a href="#" class="text-base font-light text-indigo-900 hover:underline">
+                            Contact
+                        </a>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="sticky top-0 inset-x-0 p-2 transition transform origin-top-right hidden">
+                <!-- md:hidden -->
+                <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
+                    <div class="pt-5 pb-6 px-5">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <img class="h-8 w-auto" src="./assets/logo.jpg" alt="Better You">
+                            </div>
+                            <div class="-mr-2">
+                                <button type="button"
+                                    class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                                    <span class="sr-only">Close menu</span>
+                                    <!-- Heroicon name: outline/x -->
+                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M6 18L18 6M6 6l12 12" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="py-6 px-5 space-y-6">
+                            <div class="grid grid-cols-2 gap-y-4 gap-x-8">
+                                <a href="index.html" class="text-base font-medium text-gray-900 hover:text-gray-700">
+                                    About
+                                </a>
+                                <a href="services.html" class="text-base font-medium text-gray-900 hover:text-gray-700">
+                                    Services
+                                </a>
+                                <a href="pricing.html" class="text-base font-medium text-gray-900 hover:text-gray-700">
+                                    Pricing
+                                </a>
+                                <a href="#" class="text-base font-medium text-gray-900 hover:text-gray-700">
+                                    Docs
+                                </a>
+                                <a href="#" class="text-base font-medium text-gray-900 hover:text-gray-700">
+                                    Contact
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <main class="flex-1 overflow-y-auto h-full">
+            <!-- First slide -->
+            <div class="hidden">
+            <div
+                class="md:grid md:grid-cols-2 flex flex-col  md:h-full max-w-7xl md:mt-0 mx-auto px-4 sm:px-6 relative justify-center align-center">
+                <div class="static md:absolute top-1/3 right-1/4 z-20">
+                    <h1 class="block italic text-5xl font-extralight text-indigo-800 my-2 text-center">Samantha Johnson
+                    </h1>
+                    <h6 class="block uppercase tracking-widest text-xs text-yellow-500 mb-3 text-center ">Aestetic
+                        beautician</h6>
+                </div>
+                <div class="w-full h-auto place-self-center z-10 mx-auto">
+                    <img class="sm:w-3/4 md:w-4/6 h-auto place-self-center mx-auto shadow-2xl" src="./assets/main1.jpg"
+                        alt="doctor">
+                </div>
+                <div class="w-0 h-0 md:w-full md:h-full bg-red-100 bg-opacity-60 relative right-1/4">
+                </div>
+                <div class="static md:absolute top-2/4 right-1/4 z-20">
+                    <div class="min-h-40 max-h-44 max-w-sm bg-blue-100 bg-opacity-80 shadow-xl mx-auto p-6">
+                        <div class="italic text-blue-900 text-base text-justify">Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit.
+                            Numquam iure illum rerum exercitationem qui id. Lorem ipsum dolor sit amet.
+                        </div>
+                        <button class="relative left-1/3 w-auto h-8 bg-blue-700 text-blue-50 text-xs px-3 py-2">My
+                            Certificates</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <!-- Second slide -->
+            
+            <div
+                class="md:grid md:grid-cols-2 flex flex-col  md:h-full max-w-7xl md:mt-0 mx-auto px-4 sm:px-6 relative justify-center align-center">
+                <div class="static md:absolute top-1/3 right-1/4 z-20">
+                    <h1 class="block italic text-5xl font-extralight text-indigo-800 my-2 text-center">Samantha Johnson
+                    </h1>
+                    <h6 class="block uppercase tracking-widest text-xs text-yellow-500 mb-3 text-center ">Aestetic
+                        beautician</h6>
+                </div>
+                <div class="w-full h-auto place-self-center z-10 mx-auto">
+                    <img class="sm:w-3/4 md:w-4/6 h-auto place-self-center mx-auto shadow-2xl" src="./assets/main2.jpg"
+                        alt="doctor">
+                </div>
+                <div class="w-0 h-0 md:w-full md:h-full bg-red-100 bg-opacity-60 relative right-1/4">
+                </div>
+                <div class="static md:absolute top-2/4 right-1/4 z-20">
+                    <div class="min-h-40 max-h-44 max-w-sm bg-blue-100 bg-opacity-80 shadow-xl mx-auto p-6">
+                        <div class="italic text-blue-900 text-base text-justify">Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit.
+                            Numquam iure illum rerum exercitationem qui id. Lorem ipsum dolor sit amet.
+                        </div>
+                        <button class="relative left-1/3 w-auto h-8 bg-blue-700 text-blue-50 text-xs px-3 py-2">My
+                            Certificates</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="bg-white">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6">
+                    <div
+                        class="flex justify-between items-center border-t-2 border-gray-100 py-6 md:justify-start md:space-x-10">
+                        <nav class="flex space-x-10">
+                            <a href="#" class="text-base font-light text-gray-500 hover:text-gray-900">
+                                Facebook
+                            </a>
+                            <a href="#" class="text-base font-light text-gray-500 hover:text-gray-900">
+                                Twitter
+                            </a>
+                            <a href="#" class="text-base font-light text-gray-500 hover:text-gray-900">
+                                Instargam
+                            </a>
+                        </nav>
+                    </div>
+                </div>
+        </footer>
+    </div>
+</body>
+
+</html>

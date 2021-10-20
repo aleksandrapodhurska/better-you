@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body,
+        html {
+            height: 100%;
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="/tailwind.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Better You</title>
+</head>
+
+<body>
+    <div class="flex flex-col h-full">
+        <div class="sticky bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6">
+                <div
+                    class="flex justify-between items-center border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10">
+                    <div class="flex justify-start lg:w-0 lg:flex-1">
+                        <a href="#">
+                            <span class="sr-only">Better You</span>
+                            <img class="h-10 w-auto" src="./assets/logo.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="-mr-2 -my-2 md:hidden">
+                        <button type="button"
+                            class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+                            aria-expanded="false">
+                            <span class="sr-only">Open menu</span>
+                            <!-- Heroicon name: outline/menu -->
+                            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h16" />
+                            </svg>
+                        </button>
+                    </div>
+                    <nav class="hidden md:flex space-x-10">
+                        <a href="index.html"
+                            class="text-base font-light text-indigo-900 hover:underline hover:text-gray-900">
+                            About
+                        </a>
+                        <a href="services.html"
+                            class="text-base font-light text-indigo-900 hover:underline hover:text-gray-900">
+                            Services
+                        </a>
+                        <a href="pricing.html"
+                            class="text-base font-light text-indigo-900 hover:underline hover:text-gray-900">
+                            Pricing
+                        </a>
+                        <a href="#" class="text-base font-light text-indigo-900 hover:underline hover:text-gray-900">
+                            Docs
+                        </a>
+                        </a>
+                        <a href="#" class="text-base font-light text-indigo-900 hover:underline">
+                            Contact
+                        </a>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="sticky top-0 inset-x-0 p-2 transition transform origin-top-right hidden">
+                <!-- md:hidden -->
+                <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
+                    <div class="pt-5 pb-6 px-5">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <img class="h-8 w-auto" src="./assets/logo.jpg" alt="Better You">
+                            </div>
+                            <div class="-mr-2">
+                                <button type="button"
+                                    class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                                    <span class="sr-only">Close menu</span>
+                                    <!-- Heroicon name: outline/x -->
+                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M6 18L18 6M6 6l12 12" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="py-6 px-5 space-y-6">
+                            <div class="grid grid-cols-2 gap-y-4 gap-x-8">
+                                <a href="index.html" class="text-base font-medium text-gray-900 hover:text-gray-700">
+                                    About
+                                </a>
+                                <a href="services.html" class="text-base font-medium text-gray-900 hover:text-gray-700">
+                                    Services
+                                </a>
+                                <a href="pricing.html" class="text-base font-medium text-gray-900 hover:text-gray-700">
+                                    Pricing
+                                </a>
+                                <a href="#" class="text-base font-medium text-gray-900 hover:text-gray-700">
+                                    Docs
+                                </a>
+                                <a href="#" class="text-base font-medium text-gray-900 hover:text-gray-700">
+                                    Contact
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <main class="flex-1 overflow-y-auto h-full">
+            <div class="container mx-auto my-4">
+                <h1 class="text-center text-2xl">Range of skin treatments</h1>
+                <h3 class="text-center text-xl">Be nice to your skin</h3>
+                <div class="flex flex-wrap justify-center gap-8 my-8">
+                    <div
+                        class="w-80 h-80 overflow-hidden rounded shadow-md transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105">
+                        <figure class="flex flex-col justify-between">
+                            <div class="bg-cover bg-center w-80 h-40"
+                                style="background-image: url(assets/services/facial.jpg)"></div>
+                            <figcaption
+                                class="flex flex-col h-40 justify-evenly items-center gap-2 p-3 z-10 relative bg-gray-50 bg-opacity-70   transition-all duration-500 ease-in-out">
+                                <div class="text-cyan-600">
+                                    Facial
+                                </div>
+                                <div class="overflow-hidden h-auto">
+                                    <p class="text-sm leading-5 text-justify overflow-ellipsis">
+                                        A facial is a family of skin care treatments for the face, including steam,
+                                        exfoliation (physical and chemical), extraction, creams, lotions, facial masks,
+                                        peels, and massage. As the experts suggest, facials are good for the skin as
+                                        they improve it's health. Deep cleansing and exfoliation allows for a greater
+                                        cell turnover, resulting in softer, more even skin that is less prone to
+                                        breakouts and shows fewer signs of ageing.
+                                    </p>
+                                </div>
+                                <button id="showMoreBtn"
+                                    class="w-auto h-8 bg-blue-700 rounded text-blue-50 text-xs px-3 py-2 transition duration-300 ease-in-out trnasform hover:bg-blue-500">Show
+                                    more</button>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div
+                        class="w-80 h-80 overflow-hidden rounded shadow-md transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105">
+                        <figure class="flex flex-col justify-between">
+                            <div class="bg-cover bg-center w-80 h-40"
+                                style="background-image: url(assets/services/Microdermabrasion.jpg)"></div>
+                            <figcaption
+                                class="flex flex-col h-40 justify-evenly items-center gap-2 p-3 z-10 relative bg-gray-50 bg-opacity-70   transition-all duration-500 ease-in-out">
+                                <div class="text-cyan-600">
+                                    Microdermabrasion
+                                </div>
+                                <div class="overflow-hidden h-auto">
+                                    <p class="text-sm leading-5 text-justify overflow-ellipsis">
+                                        Microdermabrasion works to remove age spots and lighter acne scars. The
+                                        procedure is one of the favorite wrinkle treatments because it is performed
+                                        quickly in a facial esthetics office. The physician uses a handheld instrument
+                                        to spray small crystals onto the surface of the skin. The crystals exfoliate the
+                                        skin layers, while using suction simultaneously to remove the crystals and dead
+                                        skin cells. More than one microdermabrasion treatment may be needed for wrinkle
+                                        removal and other skin treatments it provides.
+                                    </p>
+                                </div>
+                                <button id="showMoreBtn"
+                                    class="w-auto h-8 bg-blue-700 rounded text-blue-50 text-xs px-3 py-2 transition duration-300 ease-in-out trnasform hover:bg-blue-500">Show
+                                    more</button>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div
+                        class="w-80 h-80 overflow-hidden rounded shadow-md transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105">
+                        <figure class="flex flex-col justify-between">
+                            <div class="bg-cover bg-center w-80 h-40"
+                                style="background-image: url(assets/services/peels.jpg)"></div>
+                            <figcaption
+                                class="flex flex-col h-40 justify-evenly items-center gap-2 p-3 z-10 relative bg-gray-50 bg-opacity-70   transition-all duration-500 ease-in-out">
+                                <div class="text-cyan-600">
+                                    Chemical Peels
+                                </div>
+                                <div class="overflow-hidden h-auto">
+                                    <p class="text-sm leading-5 text-justify overflow-ellipsis">
+                                        Chemical peels, also called chemexfoliation or derma-peeling treatments, are
+                                        cosmetic treatments performed on the face, typically used as an anti-aging
+                                        solution to rejuvenate the skin. Chemical peels are used to correct skin
+                                        irregularities in texture, such as fine lines, and color, such as spots caused
+                                        by sun damage. These peels have varying strengths, characterized by the
+                                        different kinds of acids used in the applied chemical solution. Chemical-peel
+                                        solutions use three main acid ingredients to reach varying levels of intensity:
+                                        alphahydroxy acid (AHA), trichloroacetic acid (TCA), and phenol.
+                                    </p>
+                                </div>
+                                <button id="showMoreBtn"
+                                    class="w-auto h-8 bg-blue-700 rounded text-blue-50 text-xs px-3 py-2 transition duration-300 ease-in-out trnasform hover:bg-blue-500">Show
+                                    more</button>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div
+                        class="w-80 h-80 overflow-hidden rounded shadow-md transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105">
+                        <figure class="flex flex-col justify-between">
+                            <div class="bg-cover bg-center w-80 h-40"
+                                style="background-image: url(assets/services/Resurfacing.jpg)"></div>
+                            <figcaption
+                                class="flex flex-col h-40 justify-evenly items-center gap-2 p-3 z-10 relative bg-gray-50 bg-opacity-70   transition-all duration-500 ease-in-out">
+                                <div class="text-cyan-600">
+                                    Laser Resurfacing
+                                </div>
+                                <div class="overflow-hidden h-auto">
+                                    <p class="text-sm leading-5 text-justify overflow-ellipsis">
+                                        Laser skin resurfacing removes the outer layers of the skin that are damaged.
+                                        The laser resurfacingprocedure stimulates the production of collagen and new
+                                        skin cells in the underlying layers of the skin. Laser resurfacing is now used
+                                        to eliminate or reduce wrinkles and fine lines on the face and neck.
+                                    </p>
+                                </div>
+                                <button id="showMoreBtn"
+                                    class="w-auto h-8 bg-blue-700 rounded text-blue-50 text-xs px-3 py-2 transition duration-300 ease-in-out trnasform hover:bg-blue-500">Show
+                                    more</button>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div
+                        class="w-80 h-80 overflow-hidden rounded shadow-md transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105">
+                        <figure class="flex flex-col justify-between relative">
+                            <div class="bg-cover bg-center w-80 h-40"
+                                style="background-image: url(assets/services/Rejuvenation.jpg)"></div>
+                            <figcaption
+                                class="flex flex-col h-40 justify-evenly items-center gap-2 p-3 z-10 relative bg-gray-50 bg-opacity-70   transition-all duration-500 ease-in-out">
+                                <div class="text-cyan-600">
+                                    Laser Skin Rejuvenation
+                                </div>
+                                <div class="overflow-hidden h-auto">
+                                    <p class="text-sm leading-5 text-justify overflow-ellipsis">
+                                        Laser skin treatment is an advanced wrinkle removal treatment that uses infrared
+                                        light to tighten the skin without surgery. The laser light delivers heat to
+                                        layers beneath the skin’s surface, stimulating collagen production and making
+                                        the skin look tighter. Many patients consider the procedure a good alternative
+                                        to the traditional face lift, as it requires no anesthesia, no scalpel, and no
+                                        downtime
+                                    </p>
+                                </div>
+                                <button id="showMoreBtn"
+                                    class="w-auto h-8 bg-blue-700 rounded text-blue-50 text-xs px-3 py-2 transition duration-300 ease-in-out trnasform hover:bg-blue-500">Show
+                                    more</button>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div
+                        class="w-80 h-80 overflow-hidden rounded shadow-md transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105">
+                        <figure class="flex flex-col justify-between relative">
+                            <div class="bg-cover bg-center w-80 h-40 z-0"
+                                style="background-image: url(assets/services/blue-light.jpeg)"></div>
+                            <figcaption
+                                class="flex flex-col h-40 justify-evenly items-center gap-2 p-3 z-10 relative bg-gray-50 bg-opacity-70   transition-all duration-500 ease-in-out">
+                                <div class="text-cyan-600">
+                                    Acne Blue Light Therapy
+                                </div>
+                                <div class="overflow-hidden h-auto">
+                                    <p class="text-sm leading-5 text-justify overflow-ellipsis">
+                                        Acne blue light therapy works by targeting the bacteria that causes acne.
+                                        Moderate acne that has not responded to other facial skin care treatments can be
+                                        treated with this light-based therapy, which is administered over a span of
+                                        several weeks. Acne blue light therapy rarely causes side effects, and does not
+                                        damage skin.
+                                    </p>
+                                </div>
+                                <button id="showMoreBtn"
+                                    class="w-auto h-8 bg-blue-700 rounded text-blue-50 text-xs px-3 py-2 transition duration-300 ease-in-out trnasform hover:bg-blue-500">Show
+                                    more</button>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <h1 class="text-center text-2xl">Vast variety of beauty and health services</h1>
+                <h3 class="text-center text-xl">Treat yourself</h3>
+                <div class="flex flex-wrap justify-center gap-8 my-8">
+                    <div
+                        class="w-80 h-80 overflow-hidden rounded shadow-md transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105">
+                        <figure class="flex flex-col justify-between">
+                            <div class="bg-cover bg-center w-80 h-40"
+                                style="background-image: url(assets/services/laser.png)"></div>
+                            <figcaption
+                                class="flex flex-col h-40 justify-evenly items-center gap-2 p-3 z-10 relative bg-gray-50 bg-opacity-70   transition-all duration-500 ease-in-out">
+                                <div class="text-cyan-600">
+                                    Laser hair removal
+                                </div>
+                                <div class="overflow-hidden h-auto">
+                                    <p class="text-sm leading-5 text-justify overflow-ellipsis">
+                                        Laser hair removal is one of the most effective ways to remove unwanted body
+                                        hair.
+                                        Medical expertise. Quick and less painful than other hair removal methods.
+                                    </p>
+                                </div>
+                                <!-- <button id="showMoreBtn" class="w-auto h-8 bg-blue-700 rounded text-blue-50 text-xs px-3 py-2 transition duration-300 ease-in-out trnasform hover:bg-blue-500">Show more</button> -->
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div
+                        class="w-80 h-80 overflow-hidden rounded shadow-md transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105">
+                        <figure class="flex flex-col justify-between">
+                            <div class="bg-cover bg-center w-80 h-40"
+                                style="background-image: url(assets/services/massage.jpeg)"></div>
+                            <figcaption
+                                class="flex flex-col h-40 justify-evenly items-center gap-2 p-3 z-10 relative bg-gray-50 bg-opacity-70   transition-all duration-500 ease-in-out">
+                                <div class="text-cyan-600">
+                                    Therapeutic massage
+                                </div>
+                                <div class="overflow-hidden h-auto">
+                                    <p class="text-sm leading-5 text-justify overflow-ellipsis">
+                                        Therapeutic massage for a variety of health-related purposes, including to
+                                        relieve pain, rehabilitate sports injuries, reduce stress, increase relaxation,
+                                        address anxiety and depression, and aid general wellness.
+                                    </p>
+                                </div>
+                                <!-- <button id="showMoreBtn" class="w-auto h-8 bg-blue-700 rounded text-blue-50 text-xs px-3 py-2 transition duration-300 ease-in-out trnasform hover:bg-blue-500">Show more</button> -->
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div
+                        class="w-80 h-80 overflow-hidden rounded shadow-md transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105">
+                        <figure class="flex flex-col justify-between">
+                            <div class="bg-cover bg-center w-80 h-40"
+                                style="background-image: url(assets/services/Nail-Care.png)"></div>
+                            <figcaption
+                                class="flex flex-col h-40 justify-evenly items-center gap-2 p-3 z-10 relative bg-gray-50 bg-opacity-70   transition-all duration-500 ease-in-out">
+                                <div class="text-cyan-600">
+                                    Nail Care
+                                </div>
+                                <div class="overflow-hidden h-auto">
+                                    <p class="text-sm leading-5 text-justify overflow-ellipsis">
+                                        Pedicure & medical pedicure, manicure, acrylic Nail.<br>
+                                        Paraffin Dip for Hands and Feet.
+                                    </p>
+                                </div>
+                                <!-- <button id="showMoreBtn" class="w-auto h-8 bg-blue-700 rounded text-blue-50 text-xs px-3 py-2 transition duration-300 ease-in-out trnasform hover:bg-blue-500">Show more</button> -->
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div
+                        class="w-80 h-80 overflow-hidden rounded shadow-md transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105">
+                        <figure class="flex flex-col justify-between">
+                            <div class="bg-cover bg-center w-80 h-40"
+                                style="background-image: url(assets/services/hair-care.jpeg)"></div>
+                            <figcaption
+                                class="flex flex-col h-40 justify-evenly items-center gap-2 p-3 z-10 relative bg-gray-50 bg-opacity-70   transition-all duration-500 ease-in-out">
+                                <div class="text-cyan-600">
+                                    Hair Care
+                                </div>
+                                <div class="overflow-hidden h-auto">
+                                    <p class="text-sm leading-5 text-justify overflow-ellipsis">
+                                        Haircuts and styling: men, women, children.<br>
+                                        Color & highlights.
+                                    </p>
+                                </div>
+                                <!-- <button id="showMoreBtn" class="w-auto h-8 bg-blue-700 rounded text-blue-50 text-xs px-3 py-2 transition duration-300 ease-in-out trnasform hover:bg-blue-500">Show more</button> -->
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div
+                        class="w-80 h-80 overflow-hidden rounded shadow-md transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105">
+                        <figure class="flex flex-col justify-between">
+                            <div class="bg-cover bg-center w-80 h-40"
+                                style="background-image: url(assets/services/eyes.jpeg)"></div>
+                            <figcaption
+                                class="flex flex-col h-40 justify-evenly items-center gap-2 p-3 z-10 relative bg-gray-50 bg-opacity-70   transition-all duration-500 ease-in-out">
+                                <div class="text-cyan-600">
+                                    Eyes and brows
+                                </div>
+                                <div class="overflow-hidden h-auto">
+                                    <p class="text-sm leading-5 text-justify overflow-ellipsis">
+                                        Get advise you on the best shape and style to frame your face and create an
+                                        exact outline with precision and comfort.<br>
+                                        Give your eyelashes extra volume and colour, with our eyelash enhancement and
+                                        tinting treatments.
+                                    </p>
+                                </div>
+                                <!-- <button id="showMoreBtn" class="w-auto h-8 bg-blue-700 rounded text-blue-50 text-xs px-3 py-2 transition duration-300 ease-in-out trnasform hover:bg-blue-500">Show more</button> -->
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div
+                        class="w-80 h-80 overflow-hidden rounded shadow-md transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105">
+                        <figure class="flex flex-col justify-between">
+                            <div class="bg-cover bg-center w-80 h-40"
+                                style="background-image: url(assets/services/makeup.jpeg)"></div>
+                            <figcaption
+                                class="flex flex-col h-40 justify-evenly items-center gap-2 p-3 z-10 relative bg-gray-50 bg-opacity-70   transition-all duration-500 ease-in-out">
+                                <div class="text-cyan-600">
+                                    Makeup
+                                </div>
+                                <div class="overflow-hidden h-auto">
+                                    <p class="text-sm leading-5 text-justify overflow-ellipsis">
+                                        Special Occasion Makeup.
+                                        Wedding specials.
+                                        Personal lessons.
+                                    </p>
+                                </div>
+                                <!-- <button id="showMoreBtn" class="w-auto h-8 bg-blue-700 rounded text-blue-50 text-xs px-3 py-2 transition duration-300 ease-in-out trnasform hover:bg-blue-500">Show more</button> -->
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+        </main>
+
+        <footer>
+            <div class="bg-white">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6">
+                    <div
+                        class="flex justify-between items-center border-t-2 border-gray-100 py-6 md:justify-start md:space-x-10">
+                        <nav class="flex space-x-10">
+                            <a href="#" class="text-base font-light text-gray-500 hover:text-gray-900">
+                                Facebook
+                            </a>
+                            <a href="#" class="text-base font-light text-gray-500 hover:text-gray-900">
+                                Twitter
+                            </a>
+                            <a href="#" class="text-base font-light text-gray-500 hover:text-gray-900">
+                                Instargam
+                            </a>
+                        </nav>
+                    </div>
+                </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
